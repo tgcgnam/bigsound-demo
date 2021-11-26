@@ -68,7 +68,13 @@
                         <img src="img/BIG SOUND.svg" alt="">
                     </a>
                     <div class="d-flex search-input">
-                        <input class="form-control me-2" type="search" placeholder="Bạn cần tìm..." aria-label="Search">
+                        <input list="datalistOptions" id="exampleDataList" class="form-control me-2" type="search" placeholder="Bạn cần tìm..." aria-label="Search">
+                        <datalist id="datalistOptions">
+                            <option value="Tai nghe gaming">
+                            <option value="Airpod Pro">
+                            <option value="Samsung buds">
+                            <option value="Nokia tune">
+                        </datalist>
                         <a href="" class="icon-search">
                             <i class="bi bi-search"></i>
                         </a>
@@ -100,7 +106,7 @@
                                                     <img src="img/beatsbuds/mj4y3_1.jpeg" alt="" style="width: 100%;">
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>Tai nghe không dây Beats Studio Buds-Trắng</p>
+                                                    <p class="tit-cart">Tai nghe không dây Beats Studio Buds-Trắng</p>
                                                 </div>
                                                 <div class="col-3">
                                                     <div class="price-cart">
@@ -114,7 +120,7 @@
                                                     <img src="img/beatsbuds/mj503_1.jpeg" alt="" style="width: 100%;">
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>Tai nghe không dây Beats Studio Buds-Đỏ</p>
+                                                    <p class="tit-cart">Tai nghe không dây Beats Studio Buds-Đỏ</p>
                                                 </div>
                                                 <div class="col-3">
                                                     <div class="price-cart">
@@ -128,7 +134,7 @@
                                                     <img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;">
                                                 </div>
                                                 <div class="col-6">
-                                                    <p>Tai nghe không dây Beats Studio Buds-Đen</p>
+                                                    <p class="tit-cart">Tai nghe không dây Beats Studio Buds-Đen</p>
                                                 </div>
                                                 <div class="col-3">
                                                     <div class="price-cart">
@@ -184,9 +190,9 @@
                             </thead>
                             <tbody class="products-list">
                                 <tr class="row_product">
-                                    <th><img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;"></th>
+                                    <th><img src="img/beatsbuds/mj4y3_1.jpeg" alt="" style="width: 100%;"></th>
                                     <td>
-                                        <p class="tit_t-cart">Tai nghe không dây Beats Studio Buds-Đỏ</p>
+                                        <p class="tit_t-cart">Tai nghe không dây Beats Studio Buds-Trắng</p>
                                         <i class="bi bi-trash" id="icon-trash"></i>
                                     </td>
                                     <td>
@@ -195,7 +201,7 @@
                                     <td><input type="number" name="qty" id="qty" min="1" max="90" step="1" value="1"></td>
                                 </tr>
                                 <tr class="row_product">
-                                    <th><img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;"></th>
+                                    <th><img src="img/beatsbuds/mj503_1.jpeg" alt="" style="width: 100%;"></th>
                                     <td>
                                         <p class="tit_t-cart">Tai nghe không dây Beats Studio Buds-Đỏ</p>
                                         <i class="bi bi-trash" id="icon-trash"></i>
@@ -209,7 +215,7 @@
                                 <tr class="row_product">
                                     <th><img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;"></th>
                                     <td>
-                                        <p class="tit_t-cart">Tai nghe không dây Beats Studio Buds-Đỏ</p>
+                                        <p class="tit_t-cart">Tai nghe không dây Beats Studio Buds-Đen</p>
                                         <i class="bi bi-trash" id="icon-trash"></i>
                                     </td>
                                     <td>
@@ -220,79 +226,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- <div class="block-cart_block-left">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <p>Sản phẩm</p>
-                            </div>
-                            <div class="col-6">
-                                <p>Tên sản phẩm</p>
-                            </div>
-                            <div class="col-2">
-                                <p>Giá</p>
-                            </div>
-                            <div class="col-1">
-                                <p>Số lượng</p>
-                            </div>
-                            <div class="col-1">
-                                <p>Xoá</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;">
-                            </div>
-                            <div class="col-6">
-                                <p>Tai nghe không dây Beats Studio Buds-Đỏ</p>
-                            </div>
-                            <div class="col-2">
-                                <p>3.500.000</p>
-                            </div>
-                            <div class="col-1">
-                                <p><input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1"></p>
-                            </div>
-                            <div class="col-1">
-                                <p><i class="bi bi-trash"></i></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;">
-                            </div>
-                            <div class="col-6">
-                                <p>Tai nghe không dây Beats Studio Buds-Đỏ</p>
-                            </div>
-                            <div class="col-2">
-                                <p>3.500.000</p>
-                            </div>
-                            <div class="col-1">
-                                <p><input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1"></p>
-                            </div>
-                            <div class="col-1">
-                                <p><i class="bi bi-trash"></i></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img src="img/beatsbuds/mj4x3_1.jpeg" alt="" style="width: 100%;">
-                            </div>
-                            <div class="col-6">
-                                <p>Tai nghe không dây Beats Studio Buds-Đỏ</p>
-                            </div>
-                            <div class="col-2">
-                                <p>3.500.000</p>
-                            </div>
-                            <div class="col-1">
-                                <p><input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1"></p>
-                            </div>
-                            <div class="col-1">
-                                <p><i class="bi bi-trash"></i></p>
-                            </div>
-                        </div>
-                    </div> -->
+
                 </div>
                 <!--  -->
                 <div class="col-12 col-sm-12 col-lg-4 mt_30">

@@ -197,6 +197,10 @@ ul .nav-link:focus {
     cursor: auto;
 }
 
+.text-Pass {
+    font-size: 14px;
+}
+
 
 /*  */
 
@@ -770,6 +774,7 @@ button.btn-see:hover,
 .block-pay_block-right {
     border: 1px solid #dadada;
     padding: 12px;
+    font-family: 'Roboto', sans-serif;
     border-radius: 10px;
 }
 
@@ -805,6 +810,12 @@ button.btn_code {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     background-color: #f5662d;
+}
+
+.tit_t-cart,
+.price_t-cart {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -860,6 +871,7 @@ button.btn_code {
     background-color: #f5662d;
     color: #fff;
     padding: 7px;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     border-radius: 10px;
 }
@@ -873,6 +885,10 @@ input:focus {
 .bi-person-fill,
 .bi-lock-fill {
     color: #f5662d;
+}
+
+.login_form {
+    font-family: 'Roboto', sans-serif;
 }
 
 

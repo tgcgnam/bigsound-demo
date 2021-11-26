@@ -68,7 +68,13 @@
                         <img src="img/BIG SOUND.svg" alt="">
                     </a>
                     <div class="d-flex search-input">
-                        <input class="form-control me-2" type="search" placeholder="Bạn cần tìm..." aria-label="Search">
+                        <input list="datalistOptions" id="exampleDataList" class="form-control me-2" type="search" placeholder="Bạn cần tìm..." aria-label="Search">
+                        <datalist id="datalistOptions">
+                            <option value="Tai nghe gaming">
+                            <option value="Airpod Pro">
+                            <option value="Samsung buds">
+                            <option value="Nokia tune">
+                        </datalist>
                         <a href="" class="icon-search">
                             <i class="bi bi-search"></i>
                         </a>
@@ -166,7 +172,7 @@
     <main>
         <div class="container mt_150 mt_70">
             <div class="login_form m-auto">
-                <h1>Đăng ký</h1>
+                <h1 class="title">Đăng ký</h1>
                 <form class="row g-3">
                     <div class="col-12">
                         <label for="validationDefaultUsername" class="form-label">Tên đăng nhập</label>
