@@ -15,6 +15,10 @@
     margin-top: 100px;
 }
 
+.h_65 {
+    height: 65px;
+}
+
 .navbar-rp,
 .banner-slide {
     display: none;
@@ -60,7 +64,7 @@
 }
 
 .product img {
-    width: 100%;
+    width: 80%;
 }
 
 a.product:hover {
@@ -69,6 +73,11 @@ a.product:hover {
 
 .detail-product {
     padding: 10px;
+}
+
+.detail-product a {
+    color: #000;
+    text-decoration: none;
 }
 
 .title-product {
@@ -297,6 +306,10 @@ footer {
 
 /* filter */
 
+.filter__respon {
+    display: none;
+}
+
 .filter form {
     display: flex;
     flex-direction: column;
@@ -433,13 +446,20 @@ footer {
 /* product */
 
 .product {
-    width: 250px;
-    max-width: 100%;
+    width: 100%;
     border: 1px solid #000;
     color: #000;
+    /* background-color: #dadada; */
     text-decoration: none;
     margin: 5px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
     border: 1px solid rgba(220, 220, 220, 0.46);
+}
+
+.product .link_product {
+    text-align: center;
 }
 
 .product:hover {
@@ -448,10 +468,16 @@ footer {
     border: 1px solid #f5662d;
 }
 
+.product:hover img {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
 .title-products {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
+    color: #000;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -505,6 +531,7 @@ footer {
 
 .result {
     padding-left: 0;
+    width: 90%;
 }
 
 .btn-remove {
@@ -540,7 +567,7 @@ footer {
 
 .slider-nav img,
 .slider-for img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #dadada;
 }
@@ -555,6 +582,7 @@ footer {
     display: flex;
     align-items: center;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .box-title,
@@ -678,6 +706,21 @@ footer {
 
 /*  */
 
+.modal-close i {
+    cursor: pointer;
+}
+
+.hide_content {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-see-position {
+    position: absolute;
+    margin-top: 500px;
+}
+
 .block-content,
 .block-news,
 .block-technical-info {
@@ -755,8 +798,9 @@ button.btn-see {
 button.btn-see:hover,
 .block-technical-info .btn-see-detail:hover {
     border: 1px solid #f5662d;
-    color: #f5662d;
+    color: #fff;
     cursor: pointer;
+    background-color: #f5662d;
 }
 
 .box-content-news .news-link {
@@ -896,6 +940,17 @@ input:focus {
     font-family: 'Roboto', sans-serif;
 }
 
+.close_Filter {
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.btn_filter {
+    display: none;
+}
+
 
 /*  */
 
@@ -919,8 +974,10 @@ input:focus {
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 
 

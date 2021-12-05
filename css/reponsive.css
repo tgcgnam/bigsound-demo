@@ -3,11 +3,13 @@
     .products .product:last-child,
     .option-product,
     .link-bar,
+    .col-2 .filter-box,
     .products .product:nth-child(4),
     .products .product:nth-child(3) {
         display: none;
     }
-    .banner-slide {
+    .banner-slide,
+    .btn_filter {
         display: block;
     }
     .p_0 {
@@ -95,12 +97,6 @@
         font-size: 9px;
         font-family: 'Roboto', sans-serif;
     }
-    .list-brands,
-    .list-prices,
-    .list-user-needs,
-    .list-features {
-        display: flex;
-    }
     .filter {
         max-width: 100%;
     }
@@ -182,6 +178,24 @@
         font-size: 14px;
         font-family: 'Roboto', sans-serif;
     }
+    .input-all {
+        display: inline-block;
+    }
+    .filter-box .filter {
+        width: 35%;
+    }
+    .filter-box {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: #dadada;
+    }
+    .filter-box {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: #dadada;
+    }
 }
 
 
@@ -190,11 +204,13 @@
 @media (min-width:768px) and (max-width:991px) {
     .set_dnone,
     .link-bar,
+    .col-2 .filter-box,
     .products .product:last-child,
     .products .product:nth-child(4) {
         display: none;
     }
-    .banner-slide {
+    .banner-slide,
+    .btn_filter {
         display: block;
     }
     .nav-link:hover:after {
@@ -258,12 +274,6 @@
         font-size: 10px;
         font-family: 'Roboto', sans-serif;
     }
-    .list-brands,
-    .list-prices,
-    .list-user-needs,
-    .list-features {
-        display: flex;
-    }
     .filter {
         max-width: 100%;
     }
@@ -291,6 +301,24 @@
     }
     .detail_product_rp {
         margin-top: 5rem!important;
+    }
+    .input-all {
+        display: inline-block;
+    }
+    .filter-box .filter {
+        width: 35%;
+    }
+    .filter-box {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: #dadada;
+    }
+    .filter-box {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: #dadada;
     }
 }
 

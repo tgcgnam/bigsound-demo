@@ -140,3 +140,18 @@ function displayBtnRemoveFilter(filterObj) {
 }
 
 window.onload = renderFilter(filter);
+// 
+let btn_filter = document.querySelector('.btn_filter i')
+let filter__respon = document.querySelector('.filter__respon')
+let close_filter = document.querySelector('.close_Filter i')
+let filter_box = document.querySelector('.filter-box').style.padding = '16px'
+
+btn_filter.addEventListener('click', function() {
+    filter__respon.classList.add('open')
+})
+close_filter.addEventListener('click', function() {
+    filter__respon.classList.remove('open')
+})
+
+//
+//
